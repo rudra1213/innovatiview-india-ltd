@@ -1,0 +1,20 @@
+INNOVATIVIEW INDIA LTD.
+Employee Expense Management & Approval System
+
+1. Extract the ZIP and open the innovatiview-india-ltd folder in VS Code.
+2. Read README.md for local setup and demo accounts.
+3. Run npm ci in the project root.
+4. Copy backend/.env.example to backend/.env and configure MongoDB + secrets.
+5. Run npm run seed (real database) OR npm run seed:demo (demo database only).
+6. Run npm run dev and open http://localhost:5173.
+7. For your deployment, follow docs/DEPLOYMENT.md step by step.
+
+VERCEL: Deploy the complete project root, not just frontend.
+Framework: Other | Build: npm run build | Output: frontend/dist
+Backend variables: MONGODB_URI, JWT_SECRET, NODE_ENV=production, APP_URL
+
+Includes full React/Express/Mongoose code, receipt storage, auth, role-based
+workflows, admin management, reimbursement tracking and tests.
+
+Build and 8 unit tests passed. MongoDB integration and browser checks were
+blocked by the build environment. See docs/TESTING.md for details and commands.
